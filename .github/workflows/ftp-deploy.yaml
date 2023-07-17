@@ -15,4 +15,3 @@ jobs:
         ftp-server: ftp.netfirms.com
         ftp-username: tech_support
         ftp-password: ${{ secrets.ftp_password }}
-        server-dir: /public_html/tech-associates.site/product-info/test-upload/
