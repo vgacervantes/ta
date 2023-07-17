@@ -12,6 +12,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        ftp-server: ftp.netfirms.com
-        ftp-username: tech_support
-        ftp-password: technicAL-2022.1
+        server: ftp.netfirms.com
+        username: tech_support
+        password: technicAL-2022.1
