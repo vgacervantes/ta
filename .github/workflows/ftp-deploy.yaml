@@ -12,6 +12,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        ftp-server: ftp.netfirms.com
+        ftp-server: ftp.americannuclearinstitute.com
         ftp-username: tech_support
         ftp-password: ${{ secrets.ftp_password }}
