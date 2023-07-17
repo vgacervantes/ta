@@ -13,7 +13,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.netfirms.com
-        username: tech_support
+        username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         #protocol: ftps
         #port: 2222
