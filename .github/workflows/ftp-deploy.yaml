@@ -1,20 +1,18 @@
 on:
   push:
-    paths:
-      - 'dist/*'
 name: FTP Deploy
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.1.0
-      with:
-        fetch-depth: 2
+    - name: Get latest code
+      uses: actions/checkout@v3
+      
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@master
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         ftp-server: ftp.netfirms.com
         ftp-username: tech_support
         ftp-password: ${{ secrets.ftp_password }}
-        local-dir: /public_html/tech-associates.site/product-info/test-upload/
+        server-dir: /public_html/tech-associates.site/product-info/test-upload/
