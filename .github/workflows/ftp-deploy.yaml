@@ -14,7 +14,7 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@master
       with:
-        ftp-server: ${{ secrets.ftp_server }}
-        ftp-username: ${{ secrets.ftp_username }}
+        ftp-server: ftp.netfirms.com
+        ftp-username: tech_support
         ftp-password: ${{ secrets.ftp_password }}
-        local-dir: dist/
+        local-dir: /public_html/tech-associates.site/product-info/test-upload/
