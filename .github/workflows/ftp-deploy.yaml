@@ -14,7 +14,7 @@ jobs:
       with:
         server: ftp.netfirms.com
         username: tech_support
-        password: technicAL-2022.1
-        protocol: ftps
-        port: 2222
+        password: ${{ secrets.ftp_password }}
+        #protocol: ftps
+        #port: 2222
         server-dir: /public_html/tech-associates.site/product-info/test-upload/
